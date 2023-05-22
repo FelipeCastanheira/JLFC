@@ -103,12 +103,12 @@ form textarea{
 }
 
 form button{
-  width: 30%;
+  width: 40%;
   border: none;
   border-radius:20px;
   background-color: var(--tertiary);
   color: white;
-  height: 20px;
+  height: 25px;
 }
 
 form button:hover{

@@ -43,7 +43,7 @@ function Main() {
 
       <div className="right">
         <form>
-          <label>Nome Completo:</label>
+          <label>Full Name:</label>
           <input
             onChange={handleChange}
             name="name"
@@ -57,7 +57,7 @@ function Main() {
             value={contact.email}
             type="email"
           ></input>
-          <label>Mensagem:</label>
+          <label>Message:</label>
           <textarea
             onChange={handleChange}
             name="message"
@@ -66,7 +66,7 @@ function Main() {
             placeholder="Describe in detail what you have in mind for your website"
           />
           <button onClick={handleClick} className="btn">
-            Enviar
+            Submit
           </button>
         </form>
       </div>
