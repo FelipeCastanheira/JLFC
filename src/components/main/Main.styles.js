@@ -109,6 +109,7 @@ form button{
   background-color: var(--tertiary);
   color: white;
   height: 25px;
+  margin-top: 10px;
 }
 
 form button:hover{
