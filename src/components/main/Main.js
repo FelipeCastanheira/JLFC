@@ -35,9 +35,9 @@ function Main() {
     <MainContainer>
       <div className="left">
         <h1>
-          Criação de sites profissionais.
+          Website development,
           <br></br>
-          Para negócios de todos os tamanhos.
+          for businesses of all sizes.
         </h1>
       </div>
 
@@ -57,13 +57,13 @@ function Main() {
             value={contact.email}
             type="email"
           ></input>
-          <label>Messagem:</label>
+          <label>Mensagem:</label>
           <textarea
             onChange={handleChange}
             name="message"
             value={contact.message}
             rows="6"
-            placeholder="Descreve detalhadamente o que você tem em mente para o seu site"
+            placeholder="Describe in detail what you have in mind for your website"
           />
           <button onClick={handleClick} className="btn">
             Enviar
