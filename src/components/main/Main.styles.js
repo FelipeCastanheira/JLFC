@@ -6,6 +6,10 @@ padding: 5%;
 background-color: var(--secondary);
 justify-content: center;
 
+h1{
+  color: var(--tertiary);
+}
+
 .left{
   text-align: left;
 }
