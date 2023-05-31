@@ -6,6 +6,7 @@ const OurProjectContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+padding-bottom:10vh;
 
   h2 {
     font-size: 30px;
