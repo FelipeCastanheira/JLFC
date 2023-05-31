@@ -6,6 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  background-color: var(--secondary)
 }
 
 code {
@@ -19,6 +20,6 @@ code {
   --tertiary: #7376f0;
 }
 
-a{
+a {
   text-decoration: none;
 }
