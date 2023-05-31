@@ -12,6 +12,9 @@ const NavbarContainer = styled.header`
     color: var(--tertiary);
   }
 
+  .logo{
+    width: 20%;
+  }
   .desktopmenu {
     display: flex;
     justify-content: space-evenly;

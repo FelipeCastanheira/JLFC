@@ -39,6 +39,13 @@ function Main() {
           <br></br>
           for businesses of all sizes.
         </h1>
+
+        <p>
+          We would love to get you know better, here at SOON, we are at team of
+          international developers creating websites all over the globe, we work
+          with businesses of all sizes to help solve their needs. Feel free to
+          reach out to us using our form, and we will return to you shortly.{" "}
+        </p>
       </div>
 
       <div className="right">

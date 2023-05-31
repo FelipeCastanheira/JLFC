@@ -5,6 +5,10 @@ const ContactContainer = styled.div`
   flex-direction: column;
   padding-bottom: 15vh;
 
+
+  .logo{
+    width: 100%;
+  }
   .main {
     display: flex;
     width: 100%;
@@ -52,7 +56,11 @@ const ContactContainer = styled.div`
     flex-direction: column;
     gap: 10px;
     width: 25vw;
-    margin-top: -20vh;
+    align-items: center;
+  }
+
+  .left p{
+    text-align: justify;
   }
 
   .right {

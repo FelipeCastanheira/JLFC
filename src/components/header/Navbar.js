@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import NavbarContainer from "./Navbar.styles";
+import logo from '../../assets/logobranca.png'
+
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +12,7 @@ function Navbar() {
 
   return (
     <NavbarContainer>
-      <h1>JLFC</h1>
+      <img className="logo" src={logo}/>
 
       <div className="desktopmenu">
         <a href="/">Home</a>

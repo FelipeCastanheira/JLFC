@@ -14,6 +14,10 @@ h1{
   text-align: left;
 }
 
+.left p{
+  text-align: justify;
+  width: 35vw;
+}
 .right{
   display: flex;
   justify-content: center;
