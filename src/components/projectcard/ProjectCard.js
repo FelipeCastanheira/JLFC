@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
       <h3>{props.title}</h3>
       <div>
         <div className="button">
-          <a href={props.view}>View</a>
+          <a href={props.view}>Demo</a>
         </div>
       </div>
     </ProjectCardContainer>

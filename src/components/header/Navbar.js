@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavbarContainer from "./Navbar.styles";
 import logo from '../../assets/logobranca.png'
-
+import { Link } from "react-scroll";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,9 +16,30 @@ function Navbar() {
 
       <div className="desktopmenu">
         <a href="/">Home</a>
-        <a href="/">About Us</a>
-        <a href="/">Projects</a>
-        <a href="/">Contact Us</a>
+        <a href="/">
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="buttons"
+          >
+            Projects
+          </Link>
+          </a>
+        <a href="/">   
+        <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="buttons"
+          >
+            Contact Us
+          </Link>
+          </a>
       </div>
 
       <div
@@ -37,13 +58,30 @@ function Navbar() {
             <a>Home</a>
           </li>
           <li>
-            <a>About</a>
+          <a href="/">
+          <Link
+            activeClass="active"
+            to="projects"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="buttons"
+          >
+            Projects
+          </Link>
+          </a>
           </li>
           <li>
-            <a>Services</a>
-          </li>
-          <li>
-            <a>Contact</a>
+          <Link
+            activeClass="active"
+            to="contact"
+            spy={true}
+            smooth={true}
+            duration={500}
+            className="buttons"
+          >
+            Contact Us
+          </Link>
           </li>
         </ul>
       </div>

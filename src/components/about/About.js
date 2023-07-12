@@ -1,29 +1,28 @@
-import React, { useState } from "react";
+import React from "react";
 import AboutContainer from "./About.styles";
+import phone from '../../assets/phone.png';
+import google from '../../assets/google.png';
+import cart from '../../assets/cart.png'
 
 function About() {
-const [isOpen,setIsOpen] = useState(false)
-const [isOpen2,setIsOpen2] = useState(false)
-const [isOpen3,setIsOpen3] = useState(false)
-
   return (
     <AboutContainer>
-      <h2>How does it work?</h2>
 
-      <div className="left">
-        <h3>1º</h3>
-        <div className={`circle ${isOpen ? "open" : ""}`} onClick={()=>setIsOpen(!isOpen)}></div>
+      <div className="card">
+        <div className="circle"><img src={phone}></img></div>
+        <p>Responsive websites to fit all devices</p>
       </div>
 
-      <div className="right">
-      <h3>2º</h3>
-        <div className={`circle ${isOpen2 ? "open" : ""}`} onClick={()=>setIsOpen2(!isOpen2)}></div>
+      <div className="card">
+        <div className="circle"><img className="google" src={google}></img></div>
+        <p>SEO OPTIMIZED FOR GOOGLE RESULTS</p>
       </div>
 
-      <div className="left">
-      <h3>3º</h3>
-        <div className={`circle ${isOpen3 ? "open" : ""}`} onClick={()=>setIsOpen3(!isOpen3)}></div>
+      <div className="card">
+        <div className="circle"><img src={cart}></img></div>
+        <p>E-COMMERCE CAPABILITIES TO expand market</p>
       </div>
+      
     </AboutContainer>
   );
 }

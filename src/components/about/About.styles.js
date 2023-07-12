@@ -1,100 +1,142 @@
 import styled from "styled-components";
 
 const AboutContainer = styled.div`
-  background-color: var(--secondary);
+  display: flex;
+  justify-content: space-evenly;
 
-  h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    font-size: 30px;
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    height: 40vh;
+    border: solid 1px;
+    background-color: black;
+    color: white;
   }
 
+  p {
+    font-size: 28px;
+    padding: 5%;
+  }
   .circle {
-    width: 150px;
-    height: 150px;
+    border: solid 2px black;
     border-radius: 50%;
-    background-color: var(--primary);
-    animation: ease-in;
-    transition: 0.4s;
-    border: solid 1px var(--tertiary);
-  }
-
-  .circle:hover {
-    cursor: pointer;
-  }
-
-  .open {
-    width: 400px;
-    border-radius: 30px;
-    transition: 0.4s;
-    animation: ease-out;
-  }
-
-  .left {
+    width: 30%;
+    height: 40%;
+    margin-top: -18%;
+    margin-bottom: -5%;
+    background-color: white;
     display: flex;
-    justify-content: flex-start;
-    width: 90vw;
-    padding-left: 10vw;
+    justify-content: center;
+    align-items: center;
   }
 
-  .right {
-    display: flex;
-    justify-content: flex-end;
-    width: 90vw;
+  img {
+    width: 100%;
+    height: 100%;
   }
 
-  h3 {
-    font-size: 30px;
-    margin: 5px;
+  .google {
+    width: 90%;
+    height: 90%;
   }
 
   @media screen and (max-width: 780px) {
-    padding-top: 15px;
-    display: flex;
     flex-direction: column;
-    gap: 15px;
-    h2 {
-      font-size: 20px;
-      margin-bottom: 20px;
+    align-items: center;
+
+    .card {
+      width: 85vw;
+      height: 230px;
+      margin-bottom: 20%;
+      margin-top: 4%;
     }
 
     .circle {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
+      width: 95px;
+      height: 90px;
+      margin-top: -14%;
+      margin-bottom: -8%;
     }
 
-    .circle:hover {
-      cursor: pointer;
-    }
-
-    .open {
-      width: 250px;
-      border-radius: 30px;
-      transition: 0.4s;
-      animation: ease-out;
-    }
-
-    .left {
-      display: flex;
-      justify-content: flex-start;
-      width: 90vw;
-      padding-left: 0;
-    }
-
-    .right {
-      display: flex;
-      justify-content: flex-end;
-      width: 95vw;
-    }
-
-    h3 {
-      font-size: 20px;
-      margin: 5px;
+    p {
+      padding: 10%;
+      font-size: 34px;
     }
   }
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 395px) {
+    .card {
+      width: 85vw;
+      height: 200px;
+      margin-top: 6%;
+      margin-bottom: 9%;
+    }
+
+    .circle {
+      width: 90px;
+      height: 80px;
+      margin-top: -14%;
+      margin-bottom: -12%;
+    }
+
+    p {
+      font-size: 32px;
+    }
+  }
+
+  @media screen and (max-width: 376px) {
+    .card {
+      width: 85vw;
+      height: 180px;
+      margin-top: 14%;
+      margin-bottom: 8%;
+    }
+
+    .circle {
+      width: 80px;
+      height: 80px;
+      margin-top: -14%;
+      margin-bottom: -12%;
+    }
+
+    p {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 361px) {
+    .card {
+      width: 85vw;
+      height: 180px;
+      margin-top: 14%;
+      margin-bottom: 8%;
+    }
+
+    .circle {
+      width: 80px;
+      height: 75px;
+      margin-top: -14%;
+      margin-bottom: -12%;
+    }
+
+    p {
+      font-size: 30px;
+    }
+  }
+
+  @media screen and (max-width: 355px) {
+    .card {
+      width: 85vw;
+      height: 180px;
+      margin-top: 8%;
+      margin-bottom: 8%;
+    }
+
+    p {
+      font-size: 28px;
+    }
   }
 `;
 

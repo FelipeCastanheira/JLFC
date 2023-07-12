@@ -5,10 +5,14 @@ const ContactContainer = styled.div`
   flex-direction: column;
   padding-bottom: 15vh;
 
-
-  .logo{
+  .logo {
     width: 100%;
   }
+
+  .logo2{
+    display: none;
+  }
+
   .main {
     display: flex;
     width: 100%;
@@ -18,6 +22,7 @@ const ContactContainer = styled.div`
   .icons {
     display: flex;
     gap: 8px;
+    width: 100%;
   }
 
   .icon {
@@ -37,8 +42,8 @@ const ContactContainer = styled.div`
   .btn {
     margin-top: 5vh;
     text-align: center;
-    border-radius: 20px;
-    background-color: var(--tertiary);
+    background-color: black;
+    border: black solid;
     color: white;
     width: 15vw;
     height: 5vh;
@@ -47,8 +52,9 @@ const ContactContainer = styled.div`
 
   .btn:hover {
     cursor: pointer;
-    background-color: var(--tertiary);
-    color: white;
+    background-color: white;
+    color: black;
+    transition: 0.8s;
   }
 
   .left {
@@ -59,7 +65,7 @@ const ContactContainer = styled.div`
     align-items: center;
   }
 
-  .left p{
+  .left p {
     text-align: justify;
   }
 
@@ -93,10 +99,10 @@ const ContactContainer = styled.div`
     border-radius: 10px;
     background-color: rgb(255, 255, 255, 0.3);
   }
+
   h2 {
     margin-top: 5vh;
-    font-size: 40px;
-    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
     text-align: center;
   }
 
@@ -117,6 +123,71 @@ const ContactContainer = styled.div`
   }
 
   @media screen and (max-width: 780px) {
+align-items: center;
+
+
+    h2 {
+      font-size: 28px;
+    }
+    .main {
+      flex-direction: column;
+    }
+
+    .logo {
+      margin-top: -10%;
+      width: 60vw;
+    }
+
+    p {
+      width: 90vw;
+    }
+
+    .icons {
+      width: 90vw;
+    }
+
+    .right {
+      width: 85vw;
+      padding: 5%;
+    }
+
+    label {
+      width: 100%;
+    }
+
+    input {
+      width: 100%;
+      height: 3vh;
+    }
+
+    textarea {
+      width: 85vw;
+    }
+
+
+    .btn {
+    margin-top: 2vh;
+    width: 50vw;
+    height: 5vh;
+    font-size: 18px;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .logo2{
+    display: flex;
+    width: 85vw;
+    padding-top: 15%;
+  }
+  }
+  @media screen and (max-width: 395px) {
+  }
+
+  @media screen and (max-width: 370px) {
+  }
+  @media screen and (max-width: 355px) {
   }
 `;
 

@@ -6,15 +6,19 @@ const NavbarContainer = styled.header`
   justify-content: space-between;
   height: 15vh;
   background-color: var(--primary);
+  border-bottom: solid 2px black;
+  overflow-x: hidden;
+  overflow-y: hidden;
 
   h1 {
     padding-left: 5vw;
     color: var(--tertiary);
   }
 
-  .logo{
+  .logo {
     width: 20%;
   }
+
   .desktopmenu {
     display: flex;
     justify-content: space-evenly;
@@ -25,6 +29,11 @@ const NavbarContainer = styled.header`
     color: var(--tertiary);
   }
 
+  .desktopmenu a:hover {
+    border-bottom: black 1px solid;
+    transition: 0.5s;
+    cursor: pointer;
+  }
   .hamburger {
     display: none;
   }
@@ -35,6 +44,7 @@ const NavbarContainer = styled.header`
 
   @media screen and (max-width: 780px) {
     width: 100vw;
+    height: 10vh;
 
     .desktopmenu {
       display: none;
@@ -43,7 +53,7 @@ const NavbarContainer = styled.header`
     .hamburger {
       display: flex;
       flex-direction: column;
-      margin: 5px;
+      margin: 10%;
     }
 
     .hamburger span {
@@ -58,7 +68,7 @@ const NavbarContainer = styled.header`
       position: fixed;
       top: 0;
       right: -250px;
-      width: 40vw;
+      width: 50vw;
       height: 100vh;
       background-color: var(--primary);
       transition: transform 0.3s ease-in-out;
@@ -71,7 +81,7 @@ const NavbarContainer = styled.header`
     .menu {
       list-style-type: none;
       padding: 20px;
-      width: 80%;
+      width: 70%;
     }
 
     .menu a {
@@ -85,10 +95,28 @@ const NavbarContainer = styled.header`
       background-color: transparent;
       border: none;
     }
+
+    .logo {
+      width: 40%;
+    }
   }
 
-  @media screen and (max-width: 380px) {
+  @media screen and (max-width: 370px) {
+    .menu {
+      width: 65%;
+    }
   }
+
+  @media screen and (max-width: 330px) {
+    .menu {
+      width: 55%;
+    }
+
+    a{
+      font-size: 14px;
+    }
+  }
+
 `;
 
 export default NavbarContainer;
