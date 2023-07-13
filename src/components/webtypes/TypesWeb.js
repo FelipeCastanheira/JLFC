@@ -17,10 +17,9 @@ function TypesWeb() {
           <h3>1st Step - Consult with us</h3>
           <button onClick={() => setIsClicked(!isClicked)}>{isClicked ? "Close" : "More Info"}</button>
         </div>
-        {isClicked ? (
+          {isClicked ? (
           <p>
-            {" "}
-            In this call, you'll directly communicate with one of our developers
+              In this call, you'll directly communicate with one of our developers
             who will serve as the lead for your project. We will ask targeted
             questions to gain insights into your business, needs, and determine
             the optimal approach for your online presence. Our developers are

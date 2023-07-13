@@ -14,7 +14,6 @@ const TypesWebContainer = styled.div`
 
   h3 {
     font-size: 22px;
-    
   }
 
   .card {
@@ -33,6 +32,15 @@ const TypesWebContainer = styled.div`
     align-items: center;
     gap: 5%;
     width: 100%;
+    height: 50px;
+  }
+
+  .titlecardopen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
   }
 
   img {
@@ -46,14 +54,14 @@ const TypesWebContainer = styled.div`
     cursor: pointer;
   }
 
+
   p {
     text-align: justify;
     margin: 2%;
     -webkit-animation: scale-in-ver-top 0.5s
       cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
     animation: scale-in-ver-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  
-  
+    transition: 0.5s;
   }
 
   @-webkit-keyframes scale-in-ver-top {
