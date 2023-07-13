@@ -25,6 +25,7 @@ const ContactContainer = styled.div`
     width: 100%;
   }
 
+  
   .icon {
     color: var(--tertiary);
   }
@@ -61,7 +62,7 @@ const ContactContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 25vw;
+    width: 32vw;
     align-items: center;
   }
 

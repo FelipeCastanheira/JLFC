@@ -26,13 +26,8 @@ function Contact() {
           </p>
           <div className="icons">
             <p>
-              <FaPhone className="icon" /> Phone Number
-            </p>
-          </div>
-          <div className="icons">
-            <p>
               {" "}
-              <FaMailBulk className="icon" /> Email
+              <FaMailBulk className="icon" />    support@soonwebsolutions.com
             </p>
           </div>
         </div>
